@@ -23,7 +23,8 @@ for x in range(12):
 	_name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 	password = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
 	username = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
-
+def infinity():
+while True:
 def _sms(phone):
     global x, y
     user = fake_useragent.UserAgent().random
@@ -32,10 +33,9 @@ def _sms(phone):
 
     effect(message22)
 
-def infinity():
+
 	while True:
-	
-		
+	def infinity():	
 	 try:
             x += 1
             a = requests.post("https://my.telegram.org/auth/send_password",
