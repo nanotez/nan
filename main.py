@@ -17,12 +17,7 @@ phone = input(colored('Enter your phone number>>: ','cyan'))
 countT = input(colored('Enter threading>>: ','blue'))
 
 
-iteration = 0
-_name = ''
-for x in range(12):
-	_name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
-	password = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
-	username = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
+
 def infinity():
 while True:
 def _sms(phone):
