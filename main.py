@@ -41,6 +41,6 @@ def infinity():
 			print('[+] Beltelcom отправлено!')
 		except:
 			print('[-] Не отправлено!')
-
+			
 countT = Thread(target=infinity)
 countT.start()
